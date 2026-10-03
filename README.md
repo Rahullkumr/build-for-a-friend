@@ -1,6 +1,8 @@
 # build-for-a-friend
 
-Entry for the [Hacktoberfest Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01) (DEV, Hacktoberfest 2026, week 1).
+My submission to DEV's [Hacktoberfest 2026 Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01), an open-source AI project built to solve a real problem for someone I care about.
+
+![Hacktoberfest 2026 Weekend Challenge: Open-Source AI Challenge](hfw1c.webp)
 
 ## Prompt
 
@@ -31,14 +33,6 @@ Template sections:
 
 Teams: one member posts and credits teammates by username.
 
-## Judging
-
-1. Writing quality (weighted most)
-2. Relevance to prompt and theme
-3. Creativity
-4. Technical execution
-5. Use of partner tech (optional)
-
 ## Prizes
 
 - Overall winner: $250 + DEV++ + badge
@@ -46,4 +40,4 @@ Teams: one member posts and credits teammates by username.
 - Partner categories: $100 + badge
 - All valid submissions: completion badge
 
-Partner credits (Tinker, Render, Backboard, ElevenLabs): claim at [hacktoberfest.com/my/promos](hacktoberfest.com/my/promos)
+Partner credits (Tinker, Render, Backboard, ElevenLabs): claim at [hacktoberfest.com/my/promos](https://hacktoberfest.com/my/promos)
