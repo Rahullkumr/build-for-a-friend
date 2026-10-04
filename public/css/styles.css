@@ -136,17 +136,6 @@ input[type="file"] { display: none; }
   animation: shimmer 1.8s linear infinite;
 }
 @keyframes shimmer { to { background-position: -250% 0; } }
-.phases { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 0; padding: 0; list-style: none; font-size: 0.8em; }
-.phases li {
-  display: flex; align-items: center; gap: 6px; margin: 0; padding: 4px 12px;
-  border-radius: 999px; background: var(--track); color: var(--muted);
-}
-.phases li::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: currentColor; opacity: 0.5; }
-.phases li.active { background: var(--accent-bg); color: var(--accent); font-weight: 700; }
-.phases li.active::before { opacity: 1; animation: pulse 1.2s ease-in-out infinite; }
-.phases li.done { color: var(--low); background: var(--low-bg); }
-.phases li.done::before { opacity: 1; }
-@keyframes pulse { 50% { transform: scale(1.5); } }
 .elapsed { color: var(--muted); font-size: 0.8em; margin: 10px 0 0; }
 
 /* Result */

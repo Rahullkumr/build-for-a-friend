@@ -68,8 +68,6 @@ function setProgress(phase, chars, startedAt) {
     ? 40 + Math.min(chars / EXPECTED_CHARS, 1) * 58
     : Math.min((Date.now() - startedAt) / EXPECTED_READ_MS, 1) * 38;
   $('bar').style.width = `${pct}%`;
-  $('phaseReading').className = phase === 'writing' ? 'done' : 'active';
-  $('phaseWriting').className = phase === 'writing' ? 'active' : '';
 }
 
 function showError(message) {
@@ -77,6 +75,7 @@ function showError(message) {
   $('errorText').textContent = message;
   $('error').hidden = false;
   $('again').hidden = false;
+  $('pick').hidden = false;
 }
 
 function showResult(data, seconds) {
@@ -109,6 +108,7 @@ function showResult(data, seconds) {
   $('progress').hidden = true;
   $('result').hidden = false;
   $('again').hidden = false;
+  $('pick').hidden = false;
   $('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -123,6 +123,7 @@ async function explain(image) {
   $('again').hidden = true;
   $('steps').hidden = true;
   $('pick').classList.add('compact');
+  $('pick').hidden = true; // no new photo while one is being read
   $('thumb').src = image;
   $('progress').hidden = false;
 

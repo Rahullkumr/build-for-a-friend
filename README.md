@@ -2,7 +2,7 @@
 
 # पढ़ के बताओ · Padh Ke Batao
 
-*Padh ke batao* (पढ़ के बताओ) is Hindi for **"read it and tell me"**: what you say when you hand someone a letter you can't fully read yourself.
+*Padh ke batao* (पढ़ के बताओ) is Hindi for **"read it and tell me"**. It's what my Nana says whenever he hands someone a letter he can't read.
 
 **Take a photo of a document (a bank notice, hospital report, pension circular or government letter). Get it explained in simple Hindi or English: what it says, what to do, and by when.**
 
