@@ -1,4 +1,4 @@
-![Hacktoberfest 2026 Weekend Challenge: Open-Source AI Challenge](hfw1c.webp)
+![Hacktoberfest 2026 Weekend Challenge: Open-Source AI Challenge](docs/images/banner.webp)
 
 My submission to DEV's [Hacktoberfest 2026 Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01), an open-source AI project built to solve a real problem for someone I care about.
 

@@ -9,3 +9,7 @@ node_modules/
 
 # Private test photos
 samples/
+
+# Agent tooling (installed skills, not app code)
+.claude/
+skills-lock.json

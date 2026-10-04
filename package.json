@@ -1,0 +1,28 @@
+{
+  "name": "build-for-a-friend",
+  "version": "1.0.0",
+  "description": "Photo of a letter in, plain Hindi or English explanation out, run by a local open-source vision model. Built for my grandfather.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "time": "node scripts/time-letter.js"
+  },
+  "keywords": [
+    "ollama",
+    "qwen",
+    "local-ai",
+    "accessibility",
+    "hindi",
+    "hacktoberfest"
+  ],
+  "author": "Rahul Kumar",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "fastify": "^5.12.5"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.9"
+  }
+}
