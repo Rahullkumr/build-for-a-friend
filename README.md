@@ -1,8 +1,6 @@
-# build-for-a-friend
+![Hacktoberfest 2026 Weekend Challenge: Open-Source AI Challenge](hfw1c.webp)
 
 My submission to DEV's [Hacktoberfest 2026 Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01), an open-source AI project built to solve a real problem for someone I care about.
-
-![Hacktoberfest 2026 Weekend Challenge: Open-Source AI Challenge](hfw1c.webp)
 
 ## Prompt
 
