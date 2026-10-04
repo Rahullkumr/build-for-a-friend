@@ -1,7 +1,7 @@
 {
-  "name": "build-for-a-friend",
+  "name": "padh-ke-batao",
   "version": "1.0.0",
-  "description": "Photo of a letter in, plain Hindi or English explanation out, run by a local open-source vision model. Built for my grandfather.",
+  "description": "Photo of a document in, plain Hindi or English explanation out, run by a local open-source vision model. Built for my grandfather.",
   "main": "src/server.js",
   "scripts": {
     "start": "node --env-file-if-exists=.env src/server.js",

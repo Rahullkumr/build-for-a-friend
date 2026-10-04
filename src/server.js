@@ -1,5 +1,5 @@
 // Local web server: serves the page, explains document photos with Ollama,
-// and optionally reads the explanation aloud with ElevenLabs.
+// and reads the explanation aloud with ElevenLabs.
 import Fastify from 'fastify';
 import { HOST, PORT, OLLAMA_MODEL } from './config.js';
 import { warmUp } from './services/ollama.js';

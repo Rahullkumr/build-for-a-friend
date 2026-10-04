@@ -1,4 +1,4 @@
-// GET /config and POST /speak: the optional ElevenLabs voice for the Listen button.
+// GET /config and POST /speak: the ElevenLabs voice for the Listen button.
 import { Readable } from 'node:stream';
 import { speak, ttsEnabled } from '../services/elevenlabs.js';
 

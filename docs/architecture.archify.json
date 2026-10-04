@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Padh Ke Batao: how a document gets explained",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "viewBox": [
+      1180,
+      540
+    ]
+  },
+  "components": [
+    {
+      "id": "photo",
+      "type": "external",
+      "label": "Document photo",
+      "sublabel": "phone or scanner",
+      "pos": [
+        40,
+        60
+      ],
+      "size": [
+        150,
+        64
+      ]
+    },
+    {
+      "id": "page",
+      "type": "frontend",
+      "label": "Browser page",
+      "sublabel": "resize to ~900k px",
+      "tag": "Hindi / English",
+      "pos": [
+        270,
+        60
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "server",
+      "type": "backend",
+      "label": "Fastify server",
+      "sublabel": "127.0.0.1:3000",
+      "pos": [
+        530,
+        60
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "model",
+      "type": "backend",
+      "label": "Ollama",
+      "sublabel": "qwen3.5:4b vision",
+      "brand": "ollama",
+      "pos": [
+        790,
+        60
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "listen",
+      "type": "frontend",
+      "label": "Listen button",
+      "sublabel": "summary + steps",
+      "pos": [
+        270,
+        260
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "localvoice",
+      "type": "frontend",
+      "label": "Local OS voice",
+      "sublabel": "fallback: no key / offline",
+      "pos": [
+        270,
+        420
+      ],
+      "size": [
+        160,
+        64
+      ]
+    },
+    {
+      "id": "tts",
+      "type": "external",
+      "label": "ElevenLabs",
+      "sublabel": "text to speech",
+      "pos": [
+        1000,
+        260
+      ],
+      "size": [
+        150,
+        64
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "This laptop: the photo never leaves",
+      "wraps": [
+        "page",
+        "server",
+        "model",
+        "listen",
+        "localvoice"
+      ]
+    },
+    {
+      "kind": "region",
+      "label": "Internet",
+      "wraps": [
+        "tts"
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "pick-photo",
+      "from": "photo",
+      "to": "page",
+      "label": "choose"
+    },
+    {
+      "id": "explain",
+      "from": "page",
+      "to": "server",
+      "label": "POST /explain",
+      "variant": "emphasis"
+    },
+    {
+      "id": "infer",
+      "from": "server",
+      "to": "model",
+      "label": "image + prompt",
+      "variant": "emphasis"
+    },
+    {
+      "id": "show-result",
+      "from": "page",
+      "to": "listen",
+      "label": "result",
+      "labelDy": 24
+    },
+    {
+      "id": "speak",
+      "from": "listen",
+      "to": "server",
+      "label": "POST /speak"
+    },
+    {
+      "id": "synthesize",
+      "from": "server",
+      "to": "tts",
+      "label": "text only, HTTPS",
+      "variant": "security"
+    },
+    {
+      "id": "fallback",
+      "from": "listen",
+      "to": "localvoice",
+      "label": "fallback",
+      "variant": "dashed",
+      "labelDy": 24
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Stays on this laptop",
+      "items": [
+        "The document photo",
+        "Reading and explaining by qwen3.5:4b in Ollama",
+        "The key-details list (names, account numbers)"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Sent to ElevenLabs",
+      "items": [
+        "Only the summary and steps, when Listen is pressed",
+        "MP3 comes back and is cached for replay"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Streaming",
+      "items": [
+        "/explain streams progress, then the JSON explanation",
+        "About a minute per document on a laptop CPU"
+      ]
+    }
+  ]
+}
