@@ -6,3 +6,6 @@
 # Dependencies
 node_modules/
 .agents/
+
+# Private test photos
+samples/
