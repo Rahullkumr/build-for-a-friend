@@ -8,7 +8,7 @@
 
 The reading happens on your own computer, with an open-weight vision model running in [Ollama](https://ollama.com). The photo never leaves the machine.
 
-Built for my grandfather for DEV's [Hacktoberfest 2026 Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01).
+Built for my grandfather for DEV's [Hacktoberfest 2026 Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01). 📝 **Read the full story on DEV:** [Padh Ke Batao: an AI that reads my grandfather's documents to him, on a laptop with no GPU](https://dev.to/rahullkumr/padh-ke-batao-an-ai-that-reads-my-grandfathers-documents-to-him-on-a-laptop-with-no-gpu-3818)
 
 ![Hindi explanation of a bank KYC notice: urgency, deadline with days left, what it says, what to do, key details](docs/images/result-hindi.png)
 
