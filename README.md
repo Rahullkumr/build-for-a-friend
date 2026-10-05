@@ -12,6 +12,12 @@ Built for my grandfather for DEV's [Hacktoberfest 2026 Weekend Challenge: Build 
 
 ![Hindi explanation of a bank KYC notice: urgency, deadline with days left, what it says, what to do, key details](docs/images/result-hindi.png)
 
+## Demo
+
+[![Watch the Padh Ke Batao demo on YouTube](docs/images/demo-thumbnail.png)](https://youtu.be/VO9MM8JvKCQ)
+
+▶ **[Watch the demo on YouTube](https://youtu.be/VO9MM8JvKCQ)** (sound on for the Hindi voice)
+
 ## Why
 
 My grandfather gets a steady stream of letters he can't fully read: bank notices, hospital reports, pension circulars, government letters. They're dense, formal, often in English, and the part that matters (*do I need to do something, and by when?*) is buried in paragraph three. He usually waits until someone in the family has time to read it for him.
