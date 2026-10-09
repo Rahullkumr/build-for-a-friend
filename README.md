@@ -4,7 +4,7 @@
   <img src="docs/images/won-best-use-of-elevenlabs.webp" alt="Badge: Best Use of ElevenLabs in a #HF26Challenge" width="160">
 </p>
 
-<p align="center">🏆 <strong>Winner: Best Use of ElevenLabs.</strong></p></br>
+<p align="center">🏆 <strong>Winner: Best Use of ElevenLabs.</strong> <a href="https://dev.to/devteam/congrats-to-the-hacktoberfest-weekend-challenge-build-for-a-friend-winners-pgc">See all winners</a></p></br>
 
 # पढ़ के बताओ · Padh Ke Batao
 
