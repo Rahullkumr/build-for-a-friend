@@ -1,5 +1,11 @@
 ![Hacktoberfest 2026 Weekend Challenge: Open-Source AI Challenge](docs/images/banner.webp)
 
+<p align="center">
+  <img src="docs/images/won-best-use-of-elevenlabs.webp" alt="Badge: Best Use of ElevenLabs in a #HF26Challenge" width="160">
+</p>
+
+<p align="center">🏆 <strong>Winner: Best Use of ElevenLabs.</strong></p></br>
+
 # पढ़ के बताओ · Padh Ke Batao
 
 *Padh ke batao* is Hindi for **"read it and tell me"**. It's what my Nana says whenever he hands someone a letter he can't read.
